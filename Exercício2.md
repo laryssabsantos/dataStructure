@@ -1,5 +1,6 @@
 # dataStructure
 Repositório sobre estruturas de dados em C
+
 #include <stdio.h>
  
 int main () {
