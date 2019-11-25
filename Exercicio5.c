@@ -1,8 +1,8 @@
 
 #include <stdio.h>
  
- buscaBinaria(int vetor[], int chave, int tamanho);
- 
+int buscaBinaria(int vetor[], int chave, int tamanho);
+
 int buscaBinaria(int vetor[], int chave, int tamanho){
   int lim_inf = 0;
   int lim_sup = tamanho - 1;
@@ -18,7 +18,7 @@ int buscaBinaria(int vetor[], int chave, int tamanho){
       tamanho -= 1;
       return buscaBinaria(vetor, chave, tamanho);
     }else{
-      tamanho +=1;
+      tamanho += 1;
       return buscaBinaria(vetor, chave, tamanho);
     }
 }
@@ -31,6 +31,7 @@ int main(void) {
   int tamanho = sizeof(vetor) / sizeof((vetor)[0]);
  
   //retorna a posição do elemento buscado(chave)
+ //para retornar o proprio elemento através da posição, trocar "return miolo" por "return vetor[chave]"
   printf("%d",  buscaBinaria(vetor, chave, tamanho));
  
   return 0;
