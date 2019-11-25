@@ -1,7 +1,7 @@
 
 #include <stdio.h>
  
-int buscaBinaria(int vetor[], int chave, int tamanho);
+ buscaBinaria(int vetor[], int chave, int tamanho);
  
 int buscaBinaria(int vetor[], int chave, int tamanho){
   int lim_inf = 0;
@@ -9,10 +9,10 @@ int buscaBinaria(int vetor[], int chave, int tamanho){
   int miolo;
  
   miolo = (lim_inf + lim_sup)/2;
-  ;
+ 
  
   if(chave == vetor[miolo]){
-    return vetor[chave];
+    return miolo;
   }else{
     if(chave < vetor[miolo]){
       tamanho -= 1;
@@ -27,10 +27,10 @@ int buscaBinaria(int vetor[], int chave, int tamanho){
  
 int main(void) {
   int vetor[] = {2, 4, 6, 8, 10, 12, 16, 18, 20, 30, 50};
-  int chave = 8;
+  int chave = 16;
   int tamanho = sizeof(vetor) / sizeof((vetor)[0]);
  
+  //retorna a posição do elemento buscado(chave)
   printf("%d",  buscaBinaria(vetor, chave, tamanho));
  
   return 0;
-}
