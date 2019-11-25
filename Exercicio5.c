@@ -31,7 +31,6 @@ int main(void) {
   int tamanho = sizeof(vetor) / sizeof((vetor)[0]);
  
   //retorna a posição do elemento buscado(chave)
- //para retornar o proprio elemento através da posição, trocar "return miolo" por "return vetor[chave]"
   printf("%d",  buscaBinaria(vetor, chave, tamanho));
  
   return 0;
