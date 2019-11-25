@@ -1,5 +1,5 @@
+#include <stdio.h>
 
- 
 void printar_numeros(int numeros[], int qtd_numeros);
  
 void printar_desordenados(int numeros[], int qtd_numeros) {
